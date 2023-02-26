@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f7056c4a52.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- CART ICON-->
+
+            <i id="cart-icon" class="fa-solid fa-cart-plus"></i>
+
+            
+
+            <!--MENU ICON FOR MOBILE SCREEN-->
+
+            <img src="images/menu.png" class="menu-icon"
+            onclick="menutoggle()">
+        </div>
+    
+
+
+        <!-- HERO SECTION -->
+
+        <div class="row">
+
+            <div class="col-2">
+                <h1>Give Your Life<br>A New Style!</h1>
+                <p>Live an amazing and rocking lifestyle using our variety of products. We have a wide range of products around different categories <br>that will turn your boring life into a stylish one!</p>
+                <a href="" class="btn">Explore Now &#8594;</a>
+            </div>
+
+            <div class="col-2">
+                <img src="images/image1.png">
+            </div>
+
+        </div>
+
+        <!--MY-CART-->
+
+        <div class="my-cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <!--Cart Contents-->
+            <div class="cart-content">
+                
+            </div>
+            <!--Total-->
+            <div class="total">
+                <div class="total-title">Total:</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!--Button-Buy-->
+            <button type="button" class="btn-buy">Buy Now</button>
+          
+           
+            <!--Remove Cart-->
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+        </div>
+
+        
+      
+       
+
+    </div>
+</div> 
+
+<!--Featured Ctaegories-->
+
+<div class="categories">
+    <div class="small-container">
+    <div class="row">
+        <div class="col-3">
+            <img src="images/category-1.jpg" alt="">
+        </div>
+
+        <div class="col-3">
+            <img src="images/category-2.jpg" alt="">
+        </div>
+
+        <div class="col-3">
+            <img src="images/category-3.jpg" alt="">
+        </div>
+    </div>
+    </div>
+</div>
+
+<!--Featured Products-->
+
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="redshirt-details.html"><img class="productImg" src="images/product-1.jpg"></a>
+            <a href="redshirt-details.html"><h4 class="productTitle">DarkRed Printed T-Shirt</h4></a>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="productPrice">$50.00</p> 
+            <i id="add-cart" class="fa-solid fa-cart-plus cart"></i>
+        </div>
+
+        <div class="col-4">
+            <a href="kingPRO-details.html"><img class="productImg" src="images/product-2.jpg"></a>
+            <a href="kingPRO-details.html"><h4 class="productTitle">Campus Men's King PRO</h4></a>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p class="productPrice">$60.00</p>
+            <i id="add-cart" class="fa-solid fa-cart-plus cart"></i>
+        </div>
+
+        <div class="col-4">
+            <a href="greyishblack-details.html"><img class="productImg" src="images/product-3.jpg"></a>
+            <a href="greyishblack-details.html"><h4 class="productTitle">Casual Men's Denim Greyish-Black</h4></a>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p class="productPrice">$70.00</p>
+            <i id="add-cart"class="fa-solid fa-cart-plus cart"></i>
+        </div>
+
+        <div class="col-4">
+            <a href="blueshirt-details.html"><img class="productImg" src="images/product-4.jpg"></a>
+            <a href="blueshirt-details.html"><h4 class="productTitle">Puma T-Shirt DarkBlue</h4></a>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p class="productPrice">$80.00</p>
+            <i id="add-cart" class="fa-solid fa-cart-plus cart"></i>
+        </div>
+
+
+    </div>
+</div>
+
+<!--Latest Products-->
+
+<div class="small-container">
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img class="productImg" src="images/product-5.jpg">
+            <h4 class="productTitle">Grey Men's Comfort Shoe</h4>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p class="productPrice">$100.00</p>
+            <i id="add-cart" class="fa-solid fa-cart-plus cart"></i>
+            
+        </div>
+
+
+        <div class="col-4">
+            <img class="productImg" src="images/product-6.jpg">
+            <h4 class="productTitle">Puma Black T-Shirt Men's</h4>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p class="productPrice">$90.00</p>
+            <i id="add-cart" class="fa-solid fa-cart-plus cart"></i>
+            
+            
+        </div>
+
+        <div class="col-4">
+            <img class="productImg" src="images/product-7.jpg">
+            <h4 class="productTitle">HRX by Hrithik Roshan Men's</h4>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p class="productPrice">$65.00</p>
+            <i id="add-cart" class="fa-solid fa-cart-plus cart"></i>
+            
+        </div>
+
+        <div class="col-4">
+            <img class="productImg" src="images/product-8.jpg">
+            <h4 class="productTitle">Fossil Men's Black Watch</h4>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p class="productPrice">$85.00</p>
+            <i id="add-cart" class="fa-solid fa-cart-plus cart"></i>
+            
+        </div>
+    </div>
+</div>    
+
+
+<div class="small-container">
+    <div class="row">
+        <div class="col-4">
+            <img class="productImg" src="images/product-9.jpg">
+            <h4 class="productTitle">Roadster's New Collection Men's</h4>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="productPrice">$55.00</p> 
+            <i id="add-cart" class="fa-solid fa-cart-plus cart"></i>
+            
+        </div>
+
+        <div class="col-4">
+            <img class="productImg" src="images/product-10.jpg">
+            <h4 class="productTitle">Campus Men's Red Printed</h4>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p class="productPrice">$75.00</p>
+            <i id="add-cart" class="fa-solid fa-cart-plus cart"></i>
+            
+        </div>
+
+        <div class="col-4">
+            <img class="productImg" src="images/product-11.jpg">
+            <h4 class="productTitle">Casual Men's Comfort Shoe</h4>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p class="productPrice">$45.00</p>
+            <i id="add-cart" class="fa-solid fa-cart-plus cart"></i>
+            
+        </div>
+
+        <div class="col-4">
+            <img class="productImg" src="images/product-12.jpg">
+            <h4 class="productTitle">Men's Black Plain Denim</h4>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p class="productPrice">$70.00</p>
+            <i id="add-cart" class="fa-solid fa-cart-plus cart"></i>
+        
+        </div>
+    </div>
+</div>
+
+<!--Exclusive Offer-->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/exclusive.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available For You!</p>
+                <h1>Smart Band 4</h1>
+                <small> The Mi Smart Band-4 features a 39.9% larger screen, AMOLED color full-touch display with adjustable brightness, so everything is clear as it can be.<small>
+                <a href="" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Brands on our site-->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="images/logo-godrej.png">
+            </div>
+
+            <div class="col-5">
+                <img src="images/logo-oppo.png">
+            </div>
+
+            <div class="col-5">
+                <img src="images/logo-coca-cola.png">
+            </div>
+
+            <div class="col-5">
+                <img src="images/logo-paypal.png">
+            </div>
+
+            <div class="col-5">
+                <img src="images/logo-philips.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Available for both Android and iOS</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="images/logo.png">
+                <p>Our Motto is to make every Human's Life <br>Smart & Sustainable through our Products.</p>
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>FaceBook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+        <p class="made-by">@2023 Vrushabh Latkar, - E-Commerce Website</p>
+    </div>
+</div>
+
+<!--JS for toggle menu-->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+ 
+
+   
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f7056c4a52.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+         
+            <i id="cart-icon" class="fa-solid fa-cart-plus cart"></i>
+
+            <img src="images/menu.png" class="menu-icon"
+            onclick="menutoggle()">
+        </div>
+
+        
+
+        
+
+        
+
+    </div>
+
+    <!--MY-CART-->
+
+    <div class="my-cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!--Cart Contents-->
+        <div class="cart-content">
+            
+        </div>
+        <!--Total-->
+        <div class="total">
+            <div class="total-title">Total:</div>
+            <div class="total-price">$0</div>
+        </div>
+        <!--Button-Buy-->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!--Remove Cart-->
+        <i class="fa-solid fa-xmark" id="close-cart"></i>
+    </div>
+
+
+<div class="small-container">
+
+    <div class="row">
+        <h2>All Products</h2>
+        <select>
+            <option>Default Sorting</option>
+            <option>Sort by price</option>
+            <option>Sort by popularity</option>
+            <option>Sort by rating</option>
+            <option>Sort by sale</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <a href="redshirt-details.html"><img src="images/product-1.jpg"></a>
+            <a href="redshirt-details.html"><h4>DarkRed Printed T-Shirt</h4></a>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p class="productPrice">$50.00</p>
+        </div>
+
+        <div class="col-4">
+            <a href="kingPRO-details.html"><img src="images/product-2.jpg"></a>
+            <a href="kingPRO-details.html"><h4>Campus Men's King PRO</h4></a>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p class="productPrice">$50.00</p>
+        </div>
+
+        <div class="col-4">
+            <a href="greyishblack-details.html"><img src="images/product-3.jpg"></a>
+            <a href="greyishblack-details.html"><h4>Casual Men's Denim Greyish-Black</h4></a>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p class="productPrice">$50.00</p>
+        </div>
+
+        <div class="col-4">
+            <a href="blueshirt-details.html"><img src="images/product-4.jpg"></a>
+            <a href="blueshirt-details.html"><h4>DarkRed Printed T-Shirt</h4></a>
+            <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p class="productPrice">$50.00</p>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-5.jpg">
+                <h4>DarkRed Printed T-Shirt</h4>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="productPrice">$50.00</p>
+            </div>
+    
+            <div class="col-4">
+                <img src="images/product-6.jpg">
+                <h4>DarkRed Printed T-Shirt</h4>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="productPrice">$50.00</p>
+            </div>
+    
+            <div class="col-4">
+                <img src="images/product-7.jpg">
+                <h4>DarkRed Printed T-Shirt</h4>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="productPrice">$50.00</p>
+            </div>
+    
+            <div class="col-4">
+                <img src="images/product-8.jpg">
+                <h4>DarkRed Printed T-Shirt</h4>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="productPrice">$50.00</p>
+            </div>
+    
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-9.jpg">
+                    <h4>DarkRed Printed T-Shirt</h4>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="productPrice">$50.00</p>
+                </div>
+        
+                <div class="col-4">
+                    <img src="images/product-10.jpg">
+                    <h4>DarkRed Printed T-Shirt</h4>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="productPrice">$50.00</p>
+                </div>
+        
+                <div class="col-4">
+                    <img src="images/product-11.jpg">
+                    <h4>DarkRed Printed T-Shirt</h4>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="productPrice">$50.00</p>
+                </div>
+        
+                <div class="col-4">
+                    <img src="images/product-12.jpg">
+                    <h4>DarkRed Printed T-Shirt</h4>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="productPrice">$50.00</p>
+                </div>
+    
+    </div>
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+    </div>
+        </div>
+
+    </div>
+</div>
+
+<!--Footer-->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Available for both Android and iOS</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+
+            <div class="footer-col-2">
+                <img src="images/logo.png">
+                <p>Our Motto is to make every Human's Life <br>Smart & Sustainable through our Products.</p>
+            </div>
+
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>FaceBook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+        <p class="made-by">Made by Vrushabh</p>
+    </div>
+</div>
+
+
+<!--JS for toggle menu-->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
